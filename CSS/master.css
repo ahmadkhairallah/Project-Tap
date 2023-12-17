@@ -1,0 +1,167 @@
+body {
+    font-family: 'Cairo', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* Navigation */
+nav .container ul {
+    list-style: none;
+    margin-right: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
+}
+@media (max-width: 576px) {
+    nav .container ul {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+nav .container ul li a {
+    text-decoration: none;
+}
+
+@media (max-width: 576px) {
+    nav .container ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+nav ul li {
+    margin-left: 40px;
+}
+@media (max-width: 576px) {
+    nav .container ul li  {
+    
+    }
+}
+
+nav .container ul li #home {
+    color: #D1884F;
+}
+
+nav .container ul li #about, #contact {
+    color: black;
+}
+
+nav .container ul li a i {
+    margin-right: 10px;
+    transform: scaleX(-1);
+}
+
+/* Section */
+#custom-section .container {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 150px;
+}
+
+@media (max-width: 576px) {
+    #custom-section .container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+}
+
+#custom-section .container .image-container {
+    margin-left: 70px;
+}
+
+section .container .image-container img {
+    width: 250px;
+    border-bottom-left-radius: 200px;
+}
+@media (max-width: 576px) {
+    section .container .image-container img {
+        width: 200px;
+    }
+}
+@media (max-width: 576px) {
+    #custom-section .container .text-container {
+        text-align: center;
+    }
+}
+
+
+#custom-section .container .text-container .welcome {
+    color: #3BBADB;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+#custom-section .container .text-container h1 {
+    font-size: 30px;
+    color: #008AAA;
+}
+
+#custom-section .container .text-container h1 span {
+    color: #D1884F;
+}
+
+#custom-section .container .text-container .about-me {
+    line-height: 30px;
+}
+
+#custom-section .container .text-container .buttons-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 50px;
+}
+@media (max-width: 576px) {
+    #custom-section .container .text-container .buttons-container {
+    display:flex ;
+    justify-content: center; }
+}
+
+#custom-section .container .text-container .buttons-container .hire-button {
+    background-color: #008AAA;
+    border: none;
+    font-size: 16px;
+    padding: 8px 20px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+#custom-section .container .text-container .buttons-container .projects-button {
+    margin-left: 50px;
+    background-color: white;
+    font-size: 16px;
+    padding: 8px 20px;
+    border-radius: 6px;
+    color: #008AAA;
+    border: 2px solid #008AAA;
+    cursor: pointer;
+}
